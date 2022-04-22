@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Testing</title>
       </Head>
-      <Box>
+      <Box bgColor='darkBackground'>
         <Text>Testing</Text>
       </Box>
     </>

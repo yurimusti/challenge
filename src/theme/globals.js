@@ -9,7 +9,7 @@ export const breakpoints = createBreakpoints({
 
 export const colors = {
   navyBlue: '#1665db',
-  darkBackground: '#01142B',
+  darkBackground: '#000000',
   darkBackground2: '#080D23',
   lightText: '#FFFFFF',
   darkText: '#000000',

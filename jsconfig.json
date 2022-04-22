@@ -5,15 +5,6 @@
       "@components/*": [
         "components/*"
       ],
-      "@hooks/*": [
-        "hooks/*"
-      ],
-      "@features/*": [
-        "features/*"
-      ],
-      "@icons/*": [
-        "icons/*"
-      ],
       "@images/*": [
         "../public/images/*"
       ],
