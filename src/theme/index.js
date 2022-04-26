@@ -25,7 +25,6 @@ const theme = extendTheme({
     Avatar: {
       sizes: 'none',
     },
-    Button,
     Link,
   },
 })
