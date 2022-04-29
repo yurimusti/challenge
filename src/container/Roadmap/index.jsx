@@ -43,8 +43,14 @@ const RoadmapContainer = ({}) => {
           </Flex>
         </Box>
       </Flex>
-      <Box marginTop='0rem'>
-        <Image src='/assets/images/marquee.png' width='100%' />
+      <Box
+        backgroundImage='/assets/images/background/waves.png'
+        backgroundSize='contain'
+        backgroundRepeat='no-repeat'
+      >
+        <Box>
+          <Image src='/assets/images/marquee.png' width='100%' />
+        </Box>
       </Box>
     </Flex>
   )
