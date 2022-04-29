@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   Accordion,
   AccordionButton,
@@ -6,16 +7,15 @@ import {
   AccordionPanel,
   Box,
 } from './style'
-import React from 'react'
 
 const AccordionComponent = ({
   data = [{ title: 'Example Title', text: 'Example Text' }],
-  ...rest,
+  ...rest
 }) => {
   return (
     <Accordion {...rest}>
-      {data.map((e) => (
-        <AccordionItem>
+      {data.map((e, i) => (
+        <AccordionItem key={`${i}_${e.title}`}>
           <h2>
             <AccordionButton
               _expanded={{

@@ -23,5 +23,13 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
     'jsx-quotes': ['error', 'prefer-single'],
+    'arrow-body-style': 'off',
+    'react/function-component-definition': 'off',
+    'no-unused-vars': 'off',
+    'no-underscore-dangle': 'off',
+    'consistent-return': 'off',
+    'no-empty-pattern': 'off',
+    'react/no-array-index-key': 'off',
+    'jsx-a11y/alt-text': 'off',
   },
 }
