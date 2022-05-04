@@ -3,7 +3,7 @@ import React from 'react'
 
 import Button from '@components/button'
 import Accordion from '@components/accordion'
-import Carousel from '@components/carousel'
+import Carousel from '@components/carouselTips'
 
 const development = () => {
   return (

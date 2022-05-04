@@ -1,21 +1,15 @@
 const data = [
   {
-    imageUrl: '/assets/images/carrousel/1.png',
+    imageUrl: '/assets/images/carrouselTips/1.png',
   },
   {
-    imageUrl: '/assets/images/carrousel/2.png',
+    imageUrl: '/assets/images/carrouselTips/2.png',
   },
   {
-    imageUrl: '/assets/images/carrousel/3.png',
+    imageUrl: '/assets/images/carrouselTips/3.png',
   },
   {
-    imageUrl: '/assets/images/carrousel/1.png',
-  },
-  {
-    imageUrl: '/assets/images/carrousel/2.png',
-  },
-  {
-    imageUrl: '/assets/images/carrousel/3.png',
+    imageUrl: '/assets/images/carrouselTips/4.png',
   },
 ]
 
