@@ -13,7 +13,10 @@ const BannerContainer = ({}) => {
   return (
     <Flex paddingTop='0rem' flexDirection='column'>
       <Flex justifyContent='center' alignItems='center' width='100%'>
-        <Image src='/assets/images/title/rarityLevel.png' width='20%' />
+        <Image
+          src='/assets/images/title/rarityLevel.png'
+          width={{ base: '95%', m: '20%' }}
+        />
       </Flex>
       <Flex
         flexDirection='column'
@@ -21,11 +24,19 @@ const BannerContainer = ({}) => {
         alignItems='center'
         marginTop='3rem'
       >
-        <Text letterSpacing='0.1em' lineHeight='190%'>
+        <Text
+          letterSpacing='0.1em'
+          lineHeight='190%'
+          fontSize={{ base: '16rem', m: '16rem' }}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in
           ante et felis
         </Text>
-        <Text marginTop='0.6rem' letterSpacing='0.1em' lineHeight='190%'>
+        <Text
+          fontSize={{ base: '16rem', m: '16rem' }}
+          letterSpacing='0.1em'
+          lineHeight='190%'
+        >
           varius dapibus non sit amet massa. Nam posuere lacus tempor,
           sollicitudin elit sit
         </Text>

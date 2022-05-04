@@ -16,8 +16,6 @@ const BannerContainer = ({}) => {
     m: '/assets/images/cellphones.png',
   })
 
-  console.log(srcImage)
-
   return (
     <Flex paddingTop='4rem' flexDirection='column'>
       <Lottie options={defaultOptions} height='120px' />

@@ -5,9 +5,12 @@ import Input from '@components/input'
 
 const RoadmapContainer = ({}) => {
   return (
-    <Flex paddingTop='5rem' flexDirection='column' paddingBottom='10rem'>
+    <Flex paddingTop='64rem' flexDirection='column' paddingBottom='10rem'>
       <Flex justifyContent='center' alignItems='center' width='100%'>
-        <Image src='/assets/images/title/roadmap.png' width='20%' />
+        <Image
+          src='/assets/images/title/roadmap.png'
+          width={{ base: '95%', m: '20%' }}
+        />
       </Flex>
       <Flex marginTop='5rem' paddingLeft='5rem' paddingRight='5rem' mt='10rem'>
         <Box
@@ -15,7 +18,7 @@ const RoadmapContainer = ({}) => {
           backgroundSize='contain'
           backgroundRepeat='no-repeat'
           width='100%'
-          height='50rem'
+          height='800rem'
           position='relative'
         >
           <Box top='7rem' left='9rem' position='absolute'>
