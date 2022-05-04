@@ -27,7 +27,7 @@ const AccordionComponent = ({
             border='1rem solid #fff'
             borderRadius='200rem'
             padding={{ base: '12rem', m: '16rem' }}
-            paddingLeft={{ base: '32rem', m: '32rem' }}
+            paddingLeft={{ base: '24rem', m: '32rem' }}
             _expanded={{
               borderTopWidth: '0',
               borderBottomWidth: '0',
@@ -35,11 +35,11 @@ const AccordionComponent = ({
               color: 'white',
             }}
             _focus={{ boxShadow: 'none' }}
-            width='100%'
+            width={{ base: '100%', m: '100%' }}
           >
             <Box
               flex='1'
-              textAlign='left'
+              textAlign={{ base: 'center', m: 'left' }}
               fontWeight='800'
               letterSpacing='0.16em'
             >

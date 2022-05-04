@@ -13,19 +13,34 @@ const FaqContainer = ({}) => {
       </Flex>
       <Box
         display={{ base: 'grid', m: 'flex' }}
-        paddingLeft={{ base: '80rem', m: '80rem' }}
-        paddingRight={{ base: '80rem', m: '80rem' }}
+        paddingLeft={{ base: '20rem', m: '80rem' }}
+        paddingRight={{ base: '20rem', m: '80rem' }}
         justifyContent='center'
         alignItems='center'
       >
         <Accordion
           flex='1'
           data={[
-            { title: 'Example Title', text: 'Example Text' },
-            { title: 'Example Title', text: 'Example Text' },
-            { title: 'Example Title', text: 'Example Text' },
-            { title: 'Example Title', text: 'Example Text' },
-            { title: 'Example Title', text: 'Example Text' },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
           ]}
         />
 
@@ -33,11 +48,26 @@ const FaqContainer = ({}) => {
           flex='1'
           marginLeft={{ base: '0rem', m: '32rem' }}
           data={[
-            { title: 'Example Title', text: 'Example Text' },
-            { title: 'Example Title', text: 'Example Text' },
-            { title: 'Example Title', text: 'Example Text' },
-            { title: 'Example Title', text: 'Example Text' },
-            { title: 'Example Title', text: 'Example Text' },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
+            {
+              title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet nulla in odio vestibulum porta.',
+            },
           ]}
         />
       </Box>
