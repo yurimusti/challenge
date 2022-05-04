@@ -8,7 +8,6 @@ import {
   lineHeights,
   space,
   styles,
-  textStyles,
 } from './globals'
 
 const theme = extendTheme({
@@ -19,7 +18,6 @@ const theme = extendTheme({
   lineHeights,
   space,
   styles,
-  textStyles,
   components: {
     Button,
   },
