@@ -1,141 +1,50 @@
 export const Button = {
   baseStyle: {
-    fontWeight: 700,
-    borderRadius: '100rem',
+    color: '#fff',
+    fontWeight: 800,
+    fontSize: '16rem',
     textTransform: 'uppercase',
-    _disabled: {
-      bgColor: 'grayText',
-      color: '#00000066',
+    width: '264rem',
+    height: '60rem',
+    borderRadius: '4rem',
+    borderWidth: '2.5px',
+    padding: '10rem',
+    transition: 'all 0.3s ease',
+    _before: {
+      height: '0%',
+      width: '2rem',
     },
     _hover: {
-      _disabled: {
-        bgColor: 'grayText',
-        color: '#00000066',
-      },
+      bgColor: '#000',
     },
   },
   defaultProps: {
-    size: 'lg',
+    size: '',
     variant: 'primary',
   },
-  sizes: {
-    xs: {
-      fontSize: '10rem',
-      height: '30rem',
-      px: '30rem',
-    },
-    sm: {
-      fontSize: '14rem',
-      height: '45rem',
-      px: '30rem',
-    },
-    md: {
-      fontSize: '16rem',
-      height: '50rem',
-      px: '30rem',
-    },
-    lg: {
-      fontSize: '18rem',
-      height: '63rem',
-      px: '45rem',
-    },
-    xl: {
-      fontSize: '20rem',
-      height: '80rem',
-      px: '50rem',
-    },
-  },
-
   variants: {
-    'with-shadow': {
-      bg: 'red.400',
-      boxShadow: '0 0 2rem 2rem #efdfde',
-    },
-
-    link: {
-      color: 'grayText',
-      border: 'none',
-      height: 'fit-content',
-      _hover: {
-        color: 'lightText',
-      },
-      _active: {
-        border: 'none',
-        outline: 'none',
-      },
-      _focus: {
-        border: 'none',
-        outline: 'none',
-      },
-    },
     primary: {
-      color: 'darkText',
-      bgColor: '#FFF',
+      boxShadow:
+        '0 5px 20px #ff0000, 0 0 5px #ff0000 inset, 3px 3px 40px 5px #ff0000 inset',
       _hover: {
-        color: 'lightText',
-        bgColor: 'primary',
-      },
-      _active: {
-        color: 'lightText',
-        outlineWidth: '2rem',
-        outlineColor: 'primary',
-        bgColor: 'transparent',
-        filter: 'drop-shadow(0rem 0rem 10rem rgba(255, 255, 255, 0.9))',
-      },
-      _focus: {
-        color: 'lightText',
-        outlineWidth: '2rem',
-        outlineColor: 'primary',
-        boxShadow: 'none',
-        bgColor: 'transparent',
-        filter: 'drop-shadow(0rem 0rem 10rem rgba(255, 255, 255, 0.9))',
-      },
-    },
-    alt: {
-      color: 'lightText',
-      borderWidth: '2rem',
-      borderColor: '#FFF',
-      bgColor: 'transparent',
-      _hover: {
-        color: 'lightText',
-        borderWidth: '0',
-        bgColor: 'primary',
-      },
-      _active: {
-        color: 'lightText',
-        borderWidth: '0',
-        outlineWidth: '2rem',
-        outlineColor: 'primary',
-        bgColor: 'transparent',
-        filter: 'drop-shadow(0rem 0rem 10rem rgba(255, 255, 255, 0.9))',
-      },
-      _focus: {
-        color: 'lightText',
-        borderWidth: '0',
-        outlineWidth: '2rem',
-        outlineColor: 'primary',
-        boxShadow: 'none',
-        bgColor: 'transparent',
-        filter: 'drop-shadow(0rem 0rem 10rem rgba(255, 255, 255, 0.9))',
+        boxShadow:
+          '0 3px 20px #ff0000, 0 0 60px #d70404 inset, 0 0 50px #ff0000 inset',
       },
     },
     secondary: {
-      color: 'lightText',
-      bgColor: 'primary',
+      boxShadow:
+        '0 5px 20px #33e9c6, 0 0 5px #33e9c6 inset, 3px 3px 40px 5px #33e9c6 inset',
       _hover: {
-        color: 'primary',
-        bgColor: '#FFF',
+        boxShadow:
+          '0 3px 20px #33e9c6, 0 0 60px #33e9c6 inset, 0 0 50px #33e9c6 inset',
       },
-      _active: {
-        color: 'lightText',
-        bgColor: 'primary',
-        filter: 'drop-shadow(0rem 0rem 10rem rgba(255, 255, 255, 0.9))',
-      },
-      _focus: {
-        color: 'lightText',
-        boxShadow: 'none',
-        bgColor: 'primary',
-        filter: 'drop-shadow(0rem 0rem 10rem rgba(255, 255, 255, 0.9))',
+    },
+    alt: {
+      boxShadow:
+        '0 5px 20px #ffffff, 0 0 5px #ffffff inset, 3px 3px 40px 5px #ffffff inset',
+      _hover: {
+        boxShadow:
+          '0 3px 20px #ffffff, 0 0 60px #ffffff inset, 0 0 50px #ffffff inset',
       },
     },
   },

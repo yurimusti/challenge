@@ -1,6 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
 import { Button } from './components/button'
-import { Link } from './components/link'
 import {
   breakpoints,
   colors,
@@ -22,10 +21,7 @@ const theme = extendTheme({
   styles,
   textStyles,
   components: {
-    Avatar: {
-      sizes: 'none',
-    },
-    Link,
+    Button,
   },
 })
 
