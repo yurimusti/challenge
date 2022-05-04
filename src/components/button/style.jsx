@@ -2,21 +2,24 @@ import styled from 'styled-components'
 import { Button as ButtonChakra } from '@chakra-ui/react'
 
 export const ButtonPrimary = styled(ButtonChakra)`
+  //reset button
+  user-select: none;
+
   text-transform: uppercase;
   color: #fff;
-  width: 264px;
-  height: 60px;
+  width: 264px !important;
+  height: 60px !important;
   padding: 10px 10px;
   font-family: 'Orbitron', sans-serif;
   font-weight: 800;
-  background: transparent;
+  background: transparent !important;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
   outline: none;
   font-size: 1rem;
-  border-radius: 0.2rem;
+  border-radius: 0.2rem !important;
   color: #ffff;
   border: 2.5px solid #ffffff;
   box-shadow: 0 5px 20px #ff0000, 0 0 5px #ff0000 inset,

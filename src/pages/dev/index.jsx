@@ -3,6 +3,7 @@ import React from 'react'
 
 import Button from '@components/button'
 import Accordion from '@components/accordion'
+import Carousel from '@components/carousel'
 
 const development = () => {
   return (
@@ -11,6 +12,7 @@ const development = () => {
       <Button type='secondary'>download klooma</Button>
       <Button type='alt'>Example here</Button>
       <Accordion />
+      <Carousel />
     </Flex>
   )
 }

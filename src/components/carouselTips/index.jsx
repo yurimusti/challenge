@@ -3,7 +3,7 @@ import { Box, Text, Image, Flex } from '@chakra-ui/react'
 
 import list from './options'
 
-const Carousel = () => {
+const CarouselTips = () => {
   const [index, setIndex] = useState({ previous: 0, current: 1, next: 2 })
 
   const _onChange = (type) => {
@@ -27,7 +27,7 @@ const Carousel = () => {
       backgroundImage='/assets/images/shapeCarousel.png'
       backgroundRepeat='round'
       backgroundSize='cover'
-      padding='5rem'
+      padding='10rem'
       margin='5rem'
     >
       <Flex flexDirection='row'>
@@ -95,4 +95,4 @@ const Carousel = () => {
   )
 }
 
-export default Carousel
+export default CarouselTips

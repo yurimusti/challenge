@@ -2,6 +2,7 @@ import React from 'react'
 import { Flex, Text, Image, Box } from '@chakra-ui/react'
 import Lottie from 'react-lottie'
 import animationData from '../../assets/lottie/animationText01.json'
+import Carousel from '@components/carousel'
 
 const BannerContainer = ({}) => {
   const defaultOptions = {
@@ -29,8 +30,8 @@ const BannerContainer = ({}) => {
           sollicitudin elit sit
         </Text>
       </Flex>
-      <Box marginTop='5rem' paddingLeft='10rem' paddingRight='10rem'>
-        <Image src='/assets/images/shapeCarousel.png' />
+      <Box marginTop='5rem' paddingLeft='0rem' paddingRight='0rem'>
+        <Carousel />
       </Box>
       <Box marginTop='5rem'>
         <Lottie options={defaultOptions} height='120px' />

@@ -9,13 +9,17 @@ import {
 } from '@chakra-ui/react'
 
 export const Accordion = styled(AccordionChakra)`
-  padding: 4rem;
+  padding: 4rem !important;
 `
 export const AccordionButton = styled(AccordionButtonChakra)`
   border: 1px solid #fff;
   border-radius: 200px;
-  padding: 12px;
-  padding-left: 32px;
+  padding: 12px !important;
+  padding-left: 32px !important;
+
+  &:focus {
+    box-shadow: none;
+  }
 `
 export const AccordionIcon = styled(AccordionIconChakra)``
 export const AccordionItem = styled(AccordionItemChakra)`

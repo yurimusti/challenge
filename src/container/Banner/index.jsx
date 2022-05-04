@@ -40,7 +40,7 @@ const BannerContainer = ({}) => {
         <Flex flex={2} justifyContent='center' alignItems='center'>
           <Text fontSize='1.2rem'>JOIN THE WHITELIST</Text>
         </Flex>
-        <Flex flex={3} justifyContent='center' alignItems='center'>
+        <Flex flex={3} justifyContent='center' alignItems='center' marginRight='0.6rem'>
           <Input placeholder='Enter your email' />
         </Flex>
         <Flex flex={1} justifyContent='center' alignItems='center'>
