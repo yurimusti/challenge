@@ -2,9 +2,13 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
 import { remTable } from './remTable'
 
 export const breakpoints = createBreakpoints({
-  sm: '320px',
-  md: '640px',
-  lg: '1440px',
+  sm: '0',
+  md: '0',
+  lg: '0',
+  xl: '0',
+  '2xl': '0',
+  m: '640px',
+  d: '1440px'
 })
 
 export const colors = {

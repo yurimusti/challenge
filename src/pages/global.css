@@ -1,11 +1,11 @@
 html {
-  /* font-size: 1px; */
+  font-size: 1px;
   -webkit-text-size-adjust: none;
 }
 
 @media (min-width: 641px) and (max-width: 1439px) {
   html {
-    font-size: 0.5220833333;
+    font-size: 0.0694444444vw;
   }
 }
 
