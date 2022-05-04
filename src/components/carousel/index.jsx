@@ -27,8 +27,8 @@ const Carousel = () => {
       backgroundImage='/assets/images/shapeCarousel.png'
       backgroundRepeat='round'
       backgroundSize='cover'
-      padding='5rem'
-      margin='5rem'
+      padding={{ base: '32rem', m: '64rem' }}
+      margin={{ base: '32rem', m: '64rem' }}
     >
       <Flex flexDirection='row'>
         <Box flex={1}>
@@ -86,7 +86,12 @@ const Carousel = () => {
         </Box>
       </Flex>
       <Flex justifyContent='center' alignItems='center'>
-        <Text letterSpacing='0.1em' fontWeight='300' lineHeight='180%'>
+        <Text
+          letterSpacing='0.1em'
+          fontWeight='300'
+          lineHeight='180%'
+          fontSize={{ base: '14rem', m: '18rem' }}
+        >
           Nam libero tempore, cum soluta nobis <br /> est eligendi optio cumque
           nihil impedit
         </Text>
