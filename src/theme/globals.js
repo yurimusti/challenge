@@ -125,11 +125,7 @@ export const space = remTable
 export const styles = {
   global: {
     body: {
-      color: 'lightText',
-    },
-    mark: {
-      color: 'lightText',
-      bgColor: 'primary',
+      color: '#fff',
     },
   },
 }
