@@ -2,6 +2,7 @@ import React from 'react'
 import { Flex, Text, Image, Box } from '@chakra-ui/react'
 import Button from '@components/button'
 import Input from '@components/input'
+import CarouselTips from '@components/carouselTips'
 
 const RoadmapContainer = ({}) => {
   return (
@@ -12,7 +13,10 @@ const RoadmapContainer = ({}) => {
           width={{ base: '95%', m: '20%' }}
         />
       </Flex>
-      <Flex marginTop='5rem' paddingLeft='5rem' paddingRight='5rem' mt='10rem'>
+      <Flex marginTop={{ base: '64rem', m: '64rem' }} width='100%'>
+        <CarouselTips />
+      </Flex>
+      <Flex marginTop='180rem' paddingLeft='5rem' paddingRight='5rem'>
         <Box
           backgroundImage='/assets/images/whitelist.png'
           backgroundSize='contain'
@@ -21,7 +25,7 @@ const RoadmapContainer = ({}) => {
           height='800rem'
           position='relative'
         >
-          <Box top='7rem' left='9rem' position='absolute'>
+          <Box top='14rem' left='9rem' position='absolute'>
             <Text fontSize='2.4rem'>Join the whitelist</Text>
           </Box>
           <Flex

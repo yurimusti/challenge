@@ -22,23 +22,20 @@ const BannerContainer = ({}) => {
         flexDirection='column'
         justifyContent='center'
         alignItems='center'
-        marginTop='3rem'
+        marginTop='48rem'
+        paddingLeft={{ base: '24rem', m: '260rem' }}
+        paddingRight={{ base: '24rem', m: '260rem' }}
       >
         <Text
           letterSpacing='0.1em'
-          lineHeight='190%'
-          fontSize={{ base: '16rem', m: '16rem' }}
+          lineHeight={{ base: '180%', m: '190%' }}
+          fontSize={{ base: '14rem', m: '16rem' }}
+          fontWeight='300'
+          textAlign='center'
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in
-          ante et felis
-        </Text>
-        <Text
-          fontSize={{ base: '16rem', m: '16rem' }}
-          letterSpacing='0.1em'
-          lineHeight='190%'
-        >
-          varius dapibus non sit amet massa. Nam posuere lacus tempor,
-          sollicitudin elit sit
+          ante et felis varius dapibus non sit amet massa. Nam posuere lacus
+          tempor, sollicitudin elit sit
         </Text>
       </Flex>
       <Box marginTop='5rem' paddingLeft='0rem' paddingRight='0rem'>
