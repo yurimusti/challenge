@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Flex, Text, Image, Input, Box } from '@chakra-ui/react'
+import Fade from 'react-reveal/Fade'
 
 const BannerContainer = ({}) => {
   return (
@@ -31,13 +32,15 @@ const BannerContainer = ({}) => {
           src='/assets/images/welcomeText.png'
           width={{ base: '260rem', m: '696rem' }}
         />
-        <Image
-          src='/assets/images/robotInitial.png'
-          h={{ base: '335rem', m: '640rem' }}
-          position={{ base: 'static', m: 'relative' }}
-          bottom='90rem'
-          mt={{ base: '-85rem', m: '0' }}
-        />
+        <Fade right>
+          <Image
+            src='/assets/images/robotInitial.png'
+            h={{ base: '335rem', m: '640rem' }}
+            position={{ base: 'static', m: 'relative' }}
+            bottom='90rem'
+            mt={{ base: '-85rem', m: '0' }}
+          />
+        </Fade>
       </Flex>
       <Flex
         direction={{ base: 'column', m: 'row' }}
