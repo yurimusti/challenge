@@ -62,7 +62,9 @@ const Carousel = () => {
                     base: mobile[index.previous].imageUrl,
                     m: desktop[index.previous].imageUrl,
                   }}
-                  backgroundPosition='right'
+                  backgroundSize='cover'
+                  backgroundRepeat='no-repeat'
+                  backgroundPosition='right center'
                   opacity={0.5}
                   left={{ base: '0%', m: '5%' }}
                 />
@@ -70,7 +72,7 @@ const Carousel = () => {
                 <Image
                   zIndex={4}
                   position='absolute'
-                  width={{ base: '150rem', m: '60rem' }}
+                  width='88rem'
                   src='/assets/images/carrousel/left.png'
                   onClick={() => _onChange('previous')}
                   cursor='pointer'
@@ -108,6 +110,9 @@ const Carousel = () => {
                     base: mobile[index.next].imageUrl,
                     m: desktop[index.next].imageUrl,
                   }}
+                  backgroundSize='cover'
+                  backgroundRepeat='no-repeat'
+                  backgroundPosition='left center'
                   opacity={0.5}
                   right='5%'
                 />
@@ -115,7 +120,7 @@ const Carousel = () => {
                 <Image
                   zIndex={4}
                   position='absolute'
-                  width={{ base: '150rem', m: '60rem' }}
+                  width='88rem'
                   src='/assets/images/carrousel/right.png'
                   onClick={() => _onChange('next')}
                   cursor='pointer'
@@ -131,8 +136,7 @@ const Carousel = () => {
         <Flex flexDirection='row' justifyContent='center' marginTop='40rem'>
           {index.current !== 0 && (
             <Image
-              width='32rem'
-              height='32rem'
+              boxSize='43rem'
               src='/assets/images/carrousel/left.png'
               onClick={() => _onChange('previous')}
               cursor='pointer'
@@ -141,8 +145,7 @@ const Carousel = () => {
           {index.current !== desktop.length - 1 && (
             <Image
               marginLeft='17rem'
-              width='32rem'
-              height='32rem'
+              boxSize='43rem'
               src='/assets/images/carrousel/right.png'
               onClick={() => _onChange('next')}
               cursor='pointer'

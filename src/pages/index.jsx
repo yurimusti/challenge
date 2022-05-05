@@ -15,33 +15,23 @@ const Home = ({}) => {
       <Head>
         <title>Klooma NFT</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link
-          rel='preconnect'
-          href='https://fonts.gstatic.com'
-          crossorigin
-        ></link>
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
           href='https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Orbitron:wght@400;500&display=swap'
           rel='stylesheet'
-        ></link>
+        />
       </Head>
       <Box
         backgroundImage={{
           base: '/assets/images/background/bgMobile.png',
           m: '/assets/images/background/bg.png',
         }}
-        backgroundSize='cover'
+        backgroundSize='100% 100%'
+        backgroundRepeat='no-repeat'
+        backgroundPosition='top center'
       >
-        <Flex
-          height='100vh'
-          paddingLeft='10rem'
-          paddingRight='10rem'
-          flexDirection='column'
-          position='relative'
-        >
-          <BannerContainer />
-        </Flex>
-        <Flex minHeight='400vh' flexDirection='column'>
+        <BannerContainer />
+        <Flex flexDirection='column'>
           <InformationContainer />
           <RarityContainer />
           <FaqsContainer />

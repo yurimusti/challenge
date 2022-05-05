@@ -29,15 +29,16 @@ const Carousel = () => {
   return (
     <Flex
       flexDirection='column'
+      w={{ base: 'auto', m: '100%' }}
+      maxW={{ base: 'none', m: '1075rem' }}
       backgroundImage={{
         base: '/assets/images/mobile/shapeCarousel.png',
         m: '/assets/images/shapeCarousel.png',
       }}
-      height={{ base: '530rem', m: '670rem' }}
       backgroundRepeat='round'
       backgroundSize='cover'
       padding={{ base: '32rem', m: '64rem' }}
-      margin={{ base: '32rem', m: '64rem' }}
+      margin={{ base: '7rem', m: '50rem auto' }}
     >
       <Flex flexDirection='row'>
         {isMobile === false && (
@@ -104,13 +105,12 @@ const Carousel = () => {
           letterSpacing='0.1em'
           fontWeight='300'
           lineHeight={{ base: '140%', m: '180%' }}
-          fontSize={{ base: '14rem', m: '18rem' }}
-          paddingLeft={{ base: '38rem', m: '360rem' }}
-          paddingRight={{ base: '38rem', m: '360rem' }}
+          fontSize='14rem'
+          px={{ base: '38rem', m: '300rem' }}
           textAlign={{ base: 'center', m: 'justify' }}
         >
-          Nam libero tempore, cum soluta nobis est eligendi optio cumque
-          nihil impedit
+          Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+          impedit
         </Text>
       </Flex>
       {isMobile === true && (

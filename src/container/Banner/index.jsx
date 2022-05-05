@@ -3,7 +3,7 @@ import { Button, Flex, Text, Image, Input, Box } from '@chakra-ui/react'
 
 const BannerContainer = ({}) => {
   return (
-    <Box maxW='1200rem' mx={{ base: '0', m: 'auto' }}>
+    <Flex direction='column' maxW='1200rem' mx={{ base: '0', m: 'auto' }}>
       <Box
         backgroundImage='/assets/images/logo.png'
         height='50rem'
@@ -73,7 +73,7 @@ const BannerContainer = ({}) => {
           </Button>
         </Flex>
       </Flex>
-    </Box>
+    </Flex>
   )
 }
 

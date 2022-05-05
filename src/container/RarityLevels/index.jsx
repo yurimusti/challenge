@@ -1,8 +1,8 @@
 import React from 'react'
-import { Flex, Text, Image, Box } from '@chakra-ui/react'
+import { Flex, Text, Img, Box, useBreakpointValue } from '@chakra-ui/react'
+import Carousel from '@components/carousel'
 import Lottie from 'react-lottie'
 import animationData from '../../assets/lottie/animationText01.json'
-import Carousel from '@components/carousel'
 
 const BannerContainer = ({}) => {
   const defaultOptions = {
@@ -13,10 +13,16 @@ const BannerContainer = ({}) => {
       preserveAspectRatio: 'xMidYMid slice',
     },
   }
+
+  const srcImage = useBreakpointValue({
+    base: '/assets/images/robot01-mobile.png',
+    m: '/assets/images/robot01.png',
+  })
+
   return (
     <Flex paddingBottom='64rem' flexDirection='column'>
       <Flex justifyContent='center' alignItems='center' width='100%'>
-        <Image
+        <Img
           src='/assets/images/title/rarityLevel.png'
           width={{ base: '95%', m: '20%' }}
         />
@@ -41,16 +47,15 @@ const BannerContainer = ({}) => {
           tempor, sollicitudin elit sit
         </Text>
       </Flex>
-      <Box marginTop='5rem' paddingLeft='0rem' paddingRight='0rem'>
-        <Carousel />
-      </Box>
-      <Box marginTop='5rem' position='relative'>
+      <Carousel />
+      <Box marginTop='58rem' position='relative'>
         <Lottie options={defaultOptions} height={120} />
-        <Image
+        <Img
+          h={{ base: '110rem', m: '260rem' }}
           position='absolute'
-          top='0'
-          src='/assets/images/robot01.png'
-          display={{ base: 'block', m: 'none' }}
+          top='50%'
+          transform='translateY(-50%)'
+          src={srcImage}
         />
       </Box>
     </Flex>

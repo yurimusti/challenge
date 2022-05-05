@@ -1,7 +1,5 @@
 import React from 'react'
-import { Flex, Text, Image, Box, Button } from '@chakra-ui/react'
-// import Button from '@components/button'
-import Input from '@components/input'
+import { Flex, Text, Image, Input, Box, Button } from '@chakra-ui/react'
 import CarouselTips from '@components/carouselTips'
 
 const RoadmapContainer = ({}) => {
@@ -16,21 +14,17 @@ const RoadmapContainer = ({}) => {
       <Flex marginTop={{ base: '64rem', m: '64rem' }} width='100%'>
         <CarouselTips />
       </Flex>
-      <Flex
-        marginTop='120rem'
-        paddingLeft={{ base: '8rem', m: '90rem' }}
-        paddingRight={{ base: '8rem', m: '90rem' }}
-      >
+      <Flex marginTop='120rem' px={{ base: '8rem', m: '90rem' }}>
         <Box
           backgroundImage={{
             base: '/assets/images/mobile/whitelist.png',
             m: '/assets/images/whitelist.png',
           }}
           backgroundPosition='center'
-          backgroundSize='contain'
+          backgroundSize='100%'
           backgroundRepeat='no-repeat'
           width='100%'
-          height='600rem'
+          height='625rem'
           position='relative'
         >
           <Box
@@ -79,9 +73,11 @@ const RoadmapContainer = ({}) => {
             paddingRight={{ base: '16rem', m: '0' }}
           >
             <Input
+              bgColor='transparent'
               h={{ base: '58rem', m: '60rem' }}
               placeholder='Enter your email'
               style={{ marginRight: 8 }}
+              mt={{ base: '10rem', m: '0' }}
               marginBottom={{ base: '8rem', m: '0' }}
               fontSize={{ base: '14rem', m: '16rem' }}
             />

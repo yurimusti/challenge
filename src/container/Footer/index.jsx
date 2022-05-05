@@ -7,7 +7,7 @@ const Footer = ({ onClickSocial = () => {} }) => {
       flexDirection={{ base: 'column', m: 'row' }}
       alignItems='center'
       paddingTop='50rem'
-      minHeight={{ base: '35vh', m: '30vh' }}
+      minHeight={{ base: '301rem', m: '271rem' }}
     >
       <Flex flex={1} paddingLeft={{ base: '0rem', m: '78rem' }}>
         <Box

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Image, Box } from '@chakra-ui/react'
+import { Flex, Image, Box } from '@chakra-ui/react'
 import Accordion from '@components/accordion'
 
 const FaqContainer = ({}) => {
@@ -13,8 +13,7 @@ const FaqContainer = ({}) => {
       </Flex>
       <Box
         display={{ base: 'grid', m: 'flex' }}
-        paddingLeft={{ base: '20rem', m: '80rem' }}
-        paddingRight={{ base: '20rem', m: '80rem' }}
+        px={{ base: '8rem', m: '80rem' }}
         justifyContent='center'
         alignItems='center'
       >

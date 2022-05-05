@@ -54,7 +54,14 @@ const AccordionComponent = ({
                 {e.title}{' '}
               </Text>
             </Box>
-            <AccordionIcon />
+            <Box display='flex' alignItems='center' h='16rem'>
+              <AccordionIcon
+                display='flex'
+                alignItems='center'
+                fontSize='27rem'
+                lineHeight='16rem'
+              />
+            </Box>
           </AccordionButton>
 
           <AccordionPanel

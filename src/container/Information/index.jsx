@@ -9,13 +9,15 @@ import {
 } from '@chakra-ui/react'
 import Lottie from 'react-lottie'
 import animationData from '../../assets/lottie/animationText01.json'
-// import Button from '@components/button'
 
 const BannerContainer = ({}) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
     animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
   }
 
   const srcImage = useBreakpointValue({
@@ -24,8 +26,8 @@ const BannerContainer = ({}) => {
   })
 
   return (
-    <Flex paddingTop={{ base: '320rem', m: '160rem' }} flexDirection='column'>
-      <Lottie options={defaultOptions} height='120px' />
+    <Flex flexDirection='column' paddingTop={{ base: '40rem', m: '160rem' }}>
+      <Lottie options={defaultOptions} height={120} />
       <Flex
         marginTop='64rem'
         flexDirection='column'
@@ -42,7 +44,7 @@ const BannerContainer = ({}) => {
           letterSpacing='0.1em'
           textTransform='uppercase'
         >
-          The only nft collection that gives you acces klooma!
+          The only nft collection that gives you access klooma!
         </Text>
       </Flex>
       <Flex flexDirection={{ base: 'column', m: 'row' }} marginTop='64rem'>
