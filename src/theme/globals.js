@@ -42,7 +42,7 @@ export const breakpoints = createBreakpoints({
   lg: '0',
   xl: '0',
   '2xl': '0',
-  m: '640px',
+  m: '721px',
   d: '1440px',
 })
 

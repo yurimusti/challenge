@@ -1,6 +1,6 @@
 import React from 'react'
-import { Flex, Text, Image, Box } from '@chakra-ui/react'
-import Button from '@components/button'
+import { Flex, Text, Image, Box, Button } from '@chakra-ui/react'
+// import Button from '@components/button'
 import Input from '@components/input'
 import CarouselTips from '@components/carouselTips'
 
@@ -16,48 +16,86 @@ const RoadmapContainer = ({}) => {
       <Flex marginTop={{ base: '64rem', m: '64rem' }} width='100%'>
         <CarouselTips />
       </Flex>
-      <Flex marginTop='180rem' paddingLeft='5rem' paddingRight='5rem'>
+      <Flex
+        marginTop='120rem'
+        paddingLeft={{ base: '8rem', m: '90rem' }}
+        paddingRight={{ base: '8rem', m: '90rem' }}
+      >
         <Box
-          backgroundImage='/assets/images/whitelist.png'
+          backgroundImage={{
+            base: '/assets/images/mobile/whitelist.png',
+            m: '/assets/images/whitelist.png',
+          }}
+          backgroundPosition='center'
           backgroundSize='contain'
           backgroundRepeat='no-repeat'
           width='100%'
-          height='800rem'
+          height='600rem'
           position='relative'
         >
-          <Box top='14rem' left='9rem' position='absolute'>
-            <Text fontSize='2.4rem'>Join the whitelist</Text>
+          <Box
+            top={{ base: '130rem', m: '205rem' }}
+            left={{ base: '48rem', m: '144rem' }}
+            position='absolute'
+          >
+            <Text
+              fontSize={{ base: '18rem', m: '28rem' }}
+              fontWeight='800'
+              lineHeight='170%'
+              letterSpacing='0.1em'
+              textTransform='uppercase'
+            >
+              Join the whitelist
+            </Text>
           </Box>
           <Flex
-            top='8rem'
-            left='9rem'
+            top={{ base: '180rem', m: '276rem' }}
+            left={{ base: '0rem', m: '144rem' }}
+            paddingLeft={{ base: '42rem', m: '0rem' }}
+            paddingRight={{ base: '42rem', m: '64rem' }}
             position='absolute'
             flexDirection='column'
             marginTop='3rem'
           >
-            <Text letterSpacing='0.14em' lineHeight='190%'>
+            <Text
+              letterSpacing='0.14em'
+              lineHeight='140%'
+              fontWeight='400'
+              fontSize={{ base: '14rem', m: '16rem' }}
+              textAlign={{ base: 'center', m: 'initial' }}
+            >
               Duis dapibus eleifend dolor, at placerat est interdum id. Maecenas
-              at velit lectus. Fusce{' '}
-            </Text>
-            <Text letterSpacing='0.14em' lineHeight='190%'>
-              consectetu Duis dapibus eleifend dolor, at placerat est interdum
-              id. Maecenas at velit{' '}
+              at velit lectus. Fusce consectetu Duis dapibus eleifend dolor, at
+              placerat est interdum id. Maecenas at velit
             </Text>
           </Flex>
-          <Flex width='70%' top='17rem' left='9rem' position='absolute'>
-            <Input placeholder='Enter your email' style={{ marginRight: 8 }} />
-            <Button>Join now</Button>
+          <Flex
+            flexDirection={{ base: 'column', m: 'row' }}
+            width={{ base: '100%', m: '70%' }}
+            top={{ base: '335rem', m: '372rem' }}
+            left={{ base: '', m: '144rem' }}
+            position='absolute'
+            paddingLeft={{ base: '16rem', m: '0' }}
+            paddingRight={{ base: '16rem', m: '0' }}
+          >
+            <Input
+              h={{ base: '58rem', m: '60rem' }}
+              placeholder='Enter your email'
+              style={{ marginRight: 8 }}
+              marginBottom={{ base: '8rem', m: '0' }}
+              fontSize={{ base: '14rem', m: '16rem' }}
+            />
+            <Button
+              width={{ base: '100%', m: '364rem' }}
+              h={{ base: '58rem', m: '60rem' }}
+            >
+              Join now
+            </Button>
           </Flex>
         </Box>
       </Flex>
-      <Box
-        backgroundImage='/assets/images/background/waves.png'
-        backgroundSize='contain'
-        backgroundRepeat='no-repeat'
-      >
-        <Box>
-          <Image src='/assets/images/marquee.png' width='100%' />
-        </Box>
+      <Box paddingTop='90rem'>
+        <Image src='/assets/images/marquee.png' width='100%' />
       </Box>
     </Flex>
   )

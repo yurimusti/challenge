@@ -62,8 +62,13 @@ const BannerContainer = ({}) => {
             maxW={{ base: 'none', m: '505rem' }}
             h='60rem'
             placeholder='Enter your email'
+            fontSize={{ base: '12rem', m: '14rem' }}
           />
-          <Button w={{ base: '100%', m: '264rem' }} h='60rem'>
+          <Button
+            w={{ base: '100%', m: '264rem' }}
+            h='60rem'
+            fontSize={{ base: '16rem' }}
+          >
             JOIN NOW
           </Button>
         </Flex>

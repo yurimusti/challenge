@@ -1,8 +1,15 @@
 import React from 'react'
-import { Flex, Text, Image, Box, useBreakpointValue } from '@chakra-ui/react'
+import {
+  Flex,
+  Text,
+  Image,
+  Box,
+  Button,
+  useBreakpointValue,
+} from '@chakra-ui/react'
 import Lottie from 'react-lottie'
 import animationData from '../../assets/lottie/animationText01.json'
-import Button from '@components/button'
+// import Button from '@components/button'
 
 const BannerContainer = ({}) => {
   const defaultOptions = {
@@ -17,37 +24,32 @@ const BannerContainer = ({}) => {
   })
 
   return (
-    <Flex paddingTop='4rem' flexDirection='column'>
+    <Flex paddingTop={{ base: '320rem', m: '160rem' }} flexDirection='column'>
       <Lottie options={defaultOptions} height='120px' />
       <Flex
         marginTop='64rem'
         flexDirection='column'
         justifyContent='center'
         alignItems='center'
-        textAlign={{ base: 'center', m: 'justify' }}
+        textAlign={{ base: 'center', m: 'center' }}
+        marginLeft={{ base: '0rem', m: '321rem' }}
+        marginRight={{ base: '0rem', m: '321rem' }}
       >
         <Text
-          fontSize='32rem'
-          fontWeight='700'
-          lineHeight='130%'
-          textTransform='uppercase'
-        >
-          The only nft collection that
-        </Text>
-        <Text
-          fontSize='32rem'
+          fontSize={{ base: '22rem', m: '32rem' }}
           fontWeight='700'
           lineHeight='130%'
           letterSpacing='0.1em'
           textTransform='uppercase'
         >
-          gives you acces klooma!
+          The only nft collection that gives you acces klooma!
         </Text>
       </Flex>
       <Flex flexDirection={{ base: 'column', m: 'row' }} marginTop='64rem'>
         <Text
           fontSize={{ base: '12rem', m: '16rem' }}
           paddingLeft={{ base: '24rem', m: '160rem' }}
+          paddingRight={{ base: '24rem', m: '0' }}
           letterSpacing='0.1em'
           lineHeight='190%'
           textAlign='center'
@@ -60,7 +62,7 @@ const BannerContainer = ({}) => {
         <Text
           marginTop={{ base: '24rem', m: '0rem' }}
           fontSize={{ base: '12rem', m: '16rem' }}
-          paddingLeft='16rem'
+          paddingLeft={{ base: '24rem', m: '16rem' }}
           paddingRight={{ base: '24rem', m: '160rem' }}
           letterSpacing='0.1em'
           lineHeight='190%'
@@ -73,7 +75,7 @@ const BannerContainer = ({}) => {
         </Text>
       </Flex>
       <Flex justifyContent='center' alignItems='center' marginTop='64rem'>
-        <Button>Download Klooma</Button>
+        <Button width={{ base: '92%', m: '376rem' }}>Download Klooma</Button>
       </Flex>
       <Flex width='100%' justifyContent='center' marginTop='64rem'>
         <Box>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Text, Image, Flex, useBreakpointValue } from '@chakra-ui/react'
+import { Box, Image, Flex, useBreakpointValue } from '@chakra-ui/react'
 
 import { desktop, mobile } from './options'
 
@@ -37,22 +37,22 @@ const Carousel = () => {
 
   return (
     <Flex
-      flexDirection='row'
+      flexDirection={{ base: 'column', m: 'row' }}
       marginTop={{ base: '16rem', m: '32rem' }}
       marginBottom={{ base: '16rem', m: '32rem' }}
-      width='120%'
+      width='100%'
       height={{ base: '100%', m: '100%' }}
     >
-      <Box flex={1}>
-        <Flex
-          position='relative'
-          justifyContent='center'
-          alignItems='center'
-          height='100%'
-        >
-          {index.current !== 0 && (
-            <>
-              {isMobile === false && (
+      {isMobile === false && (
+        <Box flex={1}>
+          <Flex
+            position='relative'
+            justifyContent='center'
+            alignItems='center'
+            height='100%'
+          >
+            {index.current !== 0 && (
+              <>
                 <Box
                   zIndex={3}
                   position='absolute'
@@ -66,40 +66,39 @@ const Carousel = () => {
                   opacity={0.5}
                   left={{ base: '0%', m: '5%' }}
                 />
-              )}
 
-              <Image
-                zIndex={4}
-                position='absolute'
-                width='60rem'
-                top='40%'
-                src='/assets/images/carrousel/left.png'
-                onClick={() => _onChange('previous')}
-                cursor='pointer'
-                right={{ base: '-170%', m: '15%' }}
-                top={{ base: '110%', m: '40%' }}
-              />
-            </>
-          )}
-        </Flex>
-      </Box>
+                <Image
+                  zIndex={4}
+                  position='absolute'
+                  width={{ base: '150rem', m: '60rem' }}
+                  src='/assets/images/carrousel/left.png'
+                  onClick={() => _onChange('previous')}
+                  cursor='pointer'
+                  right={{ base: '-170%', m: '15%' }}
+                  top={{ base: '110%', m: '40%' }}
+                />
+              </>
+            )}
+          </Flex>
+        </Box>
+      )}
       <Box flex={1}>
         <Image
           src={srcCurrent}
           minWidth={{ base: '349rem', m: '711rem' }}
-          minHeight={{ base: '419rem', m: '400rem' }}
+          minHeight={{ base: '400rem', m: '400rem' }}
         />
       </Box>
-      <Box flex={1}>
-        <Flex
-          justifyContent='center'
-          alignItems='center'
-          height='100%'
-          position='relative'
-        >
-          {index.current !== desktop.length - 1 && (
-            <>
-              {isMobile === false && (
+      {isMobile === false && (
+        <Box flex={1}>
+          <Flex
+            justifyContent='center'
+            alignItems='center'
+            height='100%'
+            position='relative'
+          >
+            {index.current !== desktop.length - 1 && (
+              <>
                 <Box
                   zIndex={3}
                   position='absolute'
@@ -112,23 +111,45 @@ const Carousel = () => {
                   opacity={0.5}
                   right='5%'
                 />
-              )}
 
-              <Image
-                zIndex={4}
-                position='absolute'
-                width='60rem'
-                top='40%'
-                src='/assets/images/carrousel/right.png'
-                onClick={() => _onChange('next')}
-                cursor='pointer'
-                left={{ base: '-170%', m: '15%' }}
-                top={{ base: '110%', m: '40%' }}
-              />
-            </>
+                <Image
+                  zIndex={4}
+                  position='absolute'
+                  width={{ base: '150rem', m: '60rem' }}
+                  src='/assets/images/carrousel/right.png'
+                  onClick={() => _onChange('next')}
+                  cursor='pointer'
+                  left={{ base: '-140%', m: '15%' }}
+                  top={{ base: '110%', m: '40%' }}
+                />
+              </>
+            )}
+          </Flex>
+        </Box>
+      )}
+      {isMobile === true && (
+        <Flex flexDirection='row' justifyContent='center' marginTop='40rem'>
+          {index.current !== 0 && (
+            <Image
+              width='32rem'
+              height='32rem'
+              src='/assets/images/carrousel/left.png'
+              onClick={() => _onChange('previous')}
+              cursor='pointer'
+            />
+          )}
+          {index.current !== desktop.length - 1 && (
+            <Image
+              marginLeft='17rem'
+              width='32rem'
+              height='32rem'
+              src='/assets/images/carrousel/right.png'
+              onClick={() => _onChange('next')}
+              cursor='pointer'
+            />
           )}
         </Flex>
-      </Box>
+      )}
     </Flex>
   )
 }

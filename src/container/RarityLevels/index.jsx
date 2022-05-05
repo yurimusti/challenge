@@ -9,9 +9,12 @@ const BannerContainer = ({}) => {
     loop: true,
     autoplay: true,
     animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
   }
   return (
-    <Flex paddingTop='0rem' flexDirection='column'>
+    <Flex paddingBottom='64rem' flexDirection='column'>
       <Flex justifyContent='center' alignItems='center' width='100%'>
         <Image
           src='/assets/images/title/rarityLevel.png'
@@ -23,8 +26,8 @@ const BannerContainer = ({}) => {
         justifyContent='center'
         alignItems='center'
         marginTop='48rem'
-        paddingLeft={{ base: '24rem', m: '260rem' }}
-        paddingRight={{ base: '24rem', m: '260rem' }}
+        paddingLeft={{ base: '32rem', m: '260rem' }}
+        paddingRight={{ base: '32rem', m: '260rem' }}
       >
         <Text
           letterSpacing='0.1em'
@@ -41,8 +44,14 @@ const BannerContainer = ({}) => {
       <Box marginTop='5rem' paddingLeft='0rem' paddingRight='0rem'>
         <Carousel />
       </Box>
-      <Box marginTop='5rem'>
-        <Lottie options={defaultOptions} height='120px' />
+      <Box marginTop='5rem' position='relative'>
+        <Lottie options={defaultOptions} height={120} />
+        <Image
+          position='absolute'
+          top='0'
+          src='/assets/images/robot01.png'
+          display={{ base: 'block', m: 'none' }}
+        />
       </Box>
     </Flex>
   )

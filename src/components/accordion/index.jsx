@@ -20,7 +20,7 @@ const AccordionComponent = ({
           key={`${i}_${e.title}`}
           borderTopWidth={{ base: '0rem !important', m: '0rem !important' }}
           borderBottomWidth={{ base: '0rem !important', m: '0rem !important' }}
-          marginTop={{ base: '32rem', m: '32rem' }}
+          marginTop={{ base: '16rem', m: '32rem' }}
           width='100%'
         >
           <AccordionButton
