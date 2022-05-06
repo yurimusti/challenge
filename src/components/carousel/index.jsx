@@ -1,10 +1,21 @@
 import React, { useState } from 'react'
-import { Box, Text, Image, Flex, useBreakpointValue } from '@chakra-ui/react'
+import {
+  Box,
+  Text,
+  Image,
+  Flex,
+  SlideFade,
+  useBreakpointValue,
+  useDisclosure,
+  Slide,
+} from '@chakra-ui/react'
 
 import list from './options'
 
 const Carousel = () => {
   const [index, setIndex] = useState({ previous: 0, current: 1, next: 2 })
+
+  // const { isOpen, onToggle } = useDisclosure()
 
   const isMobile = useBreakpointValue({
     base: true,
@@ -24,6 +35,8 @@ const Carousel = () => {
       current: newIndex,
       next: newIndex === list.length - 1 ? 0 : newIndex + 1,
     })
+    // onToggle()
+    // onToggle()
   }
 
   return (
@@ -72,6 +85,7 @@ const Carousel = () => {
         <Box flex={1}>
           <Image src={list[index.current].imageUrl} width='100%' />
         </Box>
+
         {isMobile === false && (
           <Box flex={1}>
             <Flex

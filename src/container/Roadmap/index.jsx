@@ -11,10 +11,13 @@ const RoadmapContainer = ({}) => {
           width={{ base: '95%', m: '20%' }}
         />
       </Flex>
-      <Flex marginTop={{ base: '64rem', m: '64rem' }} width='100%'>
+      <Flex marginTop={{ base: '48rem', m: '64rem' }} width='100%'>
         <CarouselTips />
       </Flex>
-      <Flex marginTop='120rem' px={{ base: '8rem', m: '90rem' }}>
+      <Flex
+        marginTop={{ base: '-10rem', m: '120rem' }}
+        px={{ base: '8rem', m: '90rem' }}
+      >
         <Box
           backgroundImage={{
             base: '/assets/images/mobile/whitelist.png',

@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Flex, Text, Img, Box, useBreakpointValue } from '@chakra-ui/react'
 import Carousel from '@components/carousel'
 import Lottie from 'react-lottie'
 import animationData from '../../assets/lottie/animationText01.json'
 
+import { animationClose, animationZoomOut } from '@utils/animation'
+import { useInViewport } from 'react-in-viewport'
+import { motion } from 'framer-motion'
+
 const BannerContainer = ({}) => {
+  const ref = useRef(null)
+
+  const { inViewport } = useInViewport(
+    ref,
+    { rootMargin: '-100px' },
+    { disconnectOnLeave: true },
+    {}
+  )
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -20,7 +33,7 @@ const BannerContainer = ({}) => {
   })
 
   return (
-    <Flex paddingBottom='64rem' flexDirection='column'>
+    <Flex paddingBottom='64rem' paddingTop={{base: '40rem', m: ''}} flexDirection='column'>
       <Flex justifyContent='center' alignItems='center' width='100%'>
         <Img
           src='/assets/images/title/rarityLevel.png'
@@ -48,7 +61,12 @@ const BannerContainer = ({}) => {
         </Text>
       </Flex>
       <Carousel />
-      <Box marginTop='58rem' position='relative'>
+      <Box
+        ref={ref}
+        marginTop='58rem'
+        position='relative'
+        animation={inViewport ? animationZoomOut : animationClose}
+      >
         <Lottie options={defaultOptions} height={120} />
         <Img
           h={{ base: '110rem', m: '260rem' }}

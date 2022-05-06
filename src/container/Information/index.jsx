@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {
   Flex,
   Text,
@@ -6,11 +6,23 @@ import {
   Box,
   Button,
   useBreakpointValue,
+  Slide,
 } from '@chakra-ui/react'
 import Lottie from 'react-lottie'
 import animationData from '../../assets/lottie/animationText01.json'
+import { animationZoomOut, animationClose } from '@utils/animation'
+import { useInViewport } from 'react-in-viewport'
 
 const BannerContainer = ({}) => {
+  const ref = useRef(null)
+
+  const { inViewport } = useInViewport(
+    ref,
+    { rootMargin: '-300px' },
+    { disconnectOnLeave: true },
+    {}
+  )
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -79,14 +91,12 @@ const BannerContainer = ({}) => {
       <Flex justifyContent='center' alignItems='center' marginTop='64rem'>
         <Button width={{ base: '92%', m: '376rem' }}>Download Klooma</Button>
       </Flex>
-      <Flex width='100%' justifyContent='center' marginTop='64rem'>
-        <Box>
-          <Image
-            src={srcImage}
-            width={{ base: '100%', m: '100%' }}
-            height={{ base: '100%', m: '100%' }}
-          />
-        </Box>
+      <Flex width='100%' justifyContent='center' marginTop='64rem' ref={ref}>
+        <Image
+          src={srcImage}
+          width={{ base: '100%', m: '100%' }}
+          height={{ base: '100%', m: '100%' }}
+        />
       </Flex>
     </Flex>
   )
