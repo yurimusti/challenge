@@ -14,7 +14,7 @@ const FaqContainer = ({}) => {
     {}
   )
   return (
-    <Flex paddingTop='0rem' flexDirection='column'>
+    <Flex paddingTop='40rem' flexDirection='column'>
       <Flex justifyContent='center' alignItems='center' width='100%'>
         <Image
           src='/assets/images/title/faqs.png'

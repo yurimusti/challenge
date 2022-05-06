@@ -8,6 +8,7 @@ import RarityContainer from '../container/RarityLevels'
 import FaqsContainer from '../container/Faqs'
 import RoadmapContainer from '../container/Roadmap'
 import FooterContainer from '../container/Footer'
+import WhitelistContainer from 'container/Whitelist'
 
 const Home = ({}) => {
   return (
@@ -34,8 +35,9 @@ const Home = ({}) => {
         <Flex flexDirection='column'>
           <InformationContainer />
           <RarityContainer />
-          <FaqsContainer />
           <RoadmapContainer />
+          <FaqsContainer />
+          <WhitelistContainer />
         </Flex>
         <Box>
           <FooterContainer onClickSocial={(type) => {}} />

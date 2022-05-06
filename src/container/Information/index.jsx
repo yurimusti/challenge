@@ -93,6 +93,7 @@ const BannerContainer = ({}) => {
       </Flex>
       <Flex width='100%' justifyContent='center' marginTop='64rem' ref={ref}>
         <Image
+          animation={inViewport ? animationZoomOut : animationClose}
           src={srcImage}
           width={{ base: '100%', m: '100%' }}
           height={{ base: '100%', m: '100%' }}

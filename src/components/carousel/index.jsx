@@ -15,8 +15,6 @@ import list from './options'
 const Carousel = () => {
   const [index, setIndex] = useState({ previous: 0, current: 1, next: 2 })
 
-  // const { isOpen, onToggle } = useDisclosure()
-
   const isMobile = useBreakpointValue({
     base: true,
     m: false,
@@ -35,8 +33,6 @@ const Carousel = () => {
       current: newIndex,
       next: newIndex === list.length - 1 ? 0 : newIndex + 1,
     })
-    // onToggle()
-    // onToggle()
   }
 
   return (
