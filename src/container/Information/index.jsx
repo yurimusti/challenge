@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import {
   Flex,
   Text,
@@ -15,13 +15,20 @@ import { useInViewport } from 'react-in-viewport'
 
 const BannerContainer = ({}) => {
   const ref = useRef(null)
+  const [startAnimation, setStartAnimation] = useState(false)
 
   const { inViewport } = useInViewport(
     ref,
-    { rootMargin: '-300px' },
+    { rootMargin: '-100px' },
     { disconnectOnLeave: true },
     {}
   )
+
+  useEffect(() => {
+    if (inViewport === true) {
+      setStartAnimation(true)
+    }
+  }, [inViewport])
 
   const defaultOptions = {
     loop: true,
@@ -93,7 +100,7 @@ const BannerContainer = ({}) => {
       </Flex>
       <Flex width='100%' justifyContent='center' marginTop='64rem' ref={ref}>
         <Image
-          animation={inViewport ? animationZoomOut : animationClose}
+          animation={startAnimation === true && animationZoomOut}
           src={srcImage}
           width={{ base: '100%', m: '100%' }}
           height={{ base: '100%', m: '100%' }}

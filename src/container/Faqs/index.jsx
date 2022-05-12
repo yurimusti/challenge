@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Flex, Image, Box } from '@chakra-ui/react'
 import Accordion from '@components/accordion'
 import { animationClose, animationZoomOut } from '@utils/animation'
@@ -6,13 +6,21 @@ import { useInViewport } from 'react-in-viewport'
 
 const FaqContainer = ({}) => {
   const ref = useRef(null)
+  const [startAnimation, setStartAnimation] = useState(false)
 
   const { inViewport } = useInViewport(
     ref,
-    { rootMargin: '-50px' },
+    { rootMargin: '-100px' },
     { disconnectOnLeave: true },
     {}
   )
+
+  useEffect(() => {
+    if (inViewport === true) {
+      setStartAnimation(true)
+    }
+  }, [inViewport])
+
   return (
     <Flex paddingTop='40rem' flexDirection='column'>
       <Flex justifyContent='center' alignItems='center' width='100%'>
@@ -22,13 +30,13 @@ const FaqContainer = ({}) => {
         />
       </Flex>
       <Box
-        marginTop={{base: '30rem', m: '48rem'}}
+        marginTop={{ base: '30rem', m: '48rem' }}
         ref={ref}
         display={{ base: 'grid', m: 'flex' }}
         px={{ base: '8rem', m: '80rem' }}
         justifyContent='center'
         alignItems='center'
-        animation={inViewport ? animationZoomOut : animationClose}
+        animation={startAnimation === true && animationZoomOut}
       >
         <Accordion
           flex='1'

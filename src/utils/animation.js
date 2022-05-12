@@ -83,7 +83,7 @@ export const animationFloat = `${float} 4s ease-in-out infinite`
 
 export const animationFadeIn = `${fadeIn} 2s ease-in-out`
 
-export const animationZoomOut = `${fadeInUp} 2s ease-in-out`
+export const animationZoomOut = `${fadeInUp} 4s ease-in-out`
 
 export const animationClose = `${close} 1s ease-in-out`
 

@@ -19,7 +19,7 @@ const Whitelist = () => {
             m: '/assets/images/whitelist.png',
           }}
           backgroundPosition='center'
-          backgroundSize='100%'
+          backgroundSize='contain'
           backgroundRepeat='no-repeat'
           width='100%'
           height='625rem'
