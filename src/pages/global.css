@@ -15,12 +15,3 @@ html {
   }
 }
 
-@font-face {
-  font-family: 'Orbitron';
-  src: url('../assets/fonts/Orbitron-Bold.ttf') format('truetype');
-  font-weight: bold;
-  src: url('../assets/fonts/Orbitron-Medium.ttf') format('truetype');
-  font-weight: medium;
-  src: url('../assets/fonts/Orbitron-Regular.ttf') format('truetype');
-  font-weight: normal;
-}

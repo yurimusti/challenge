@@ -57,9 +57,9 @@ export const colors = {
 }
 
 export const fonts = {
-  body: 'Orbitron, sans-serif',
-  heading: 'Orbitron, sans-serif',
-  mono: 'Menlo, monospace',
+  body: 'Roboto, sans-serif',
+  heading: 'Roboto, sans-serif',
+  mono: 'Roboto, monospace',
 }
 
 export const fontSizes = {
